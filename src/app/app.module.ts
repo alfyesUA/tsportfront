@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './routing-module/app-routing.module';
 import { DeporteModule } from './deporte/deporte.module';
 import { FormsModule } from '@angular/forms';
+import { DeportistaModule } from './deportista/deportista.module';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { FormsModule } from '@angular/forms';
     AppRoutingModule,
     HttpClientModule,
     DeporteModule,
-    FormsModule
+    FormsModule,
+    DeportistaModule
   ],
   providers: [],
   bootstrap: [AppComponent]

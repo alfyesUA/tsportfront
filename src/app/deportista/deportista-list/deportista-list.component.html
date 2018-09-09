@@ -1,0 +1,26 @@
+<div id="alertPanel" style="text-align: center"></div>
+<div class="container-fluid">
+    <div class="col-md-4">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Nombre</th>    
+                    <th>Fecha de Nacimiento</th>
+                    <th>Foto</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor = "let deportista of deportistas">
+                    <td><span>{{deportista.nombre}}</span></td>
+                    <td>{{deportista.fechaNacimiento|date:'yyyy-MM-dd'}}</td>
+                    <td>
+                        <div class="img-thumbnail border-0">                        
+                            <img class="img-fluid" src='{{deportista.imagen}}' alt="{{deportista.nombre}}" />                                     
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
