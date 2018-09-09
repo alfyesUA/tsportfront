@@ -4,5 +4,5 @@
 
 export const environment = {
   production: false,
-  apiURL: '../../assets/'
+  apiURL: 'http://localhost:8000/tsport/api'
 };

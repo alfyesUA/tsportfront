@@ -6,7 +6,7 @@ import { HttpClient } from '@angular/common/http';
 import { environment } from '../../environments/environment';
 
 const API_URL = environment.apiURL;
-const deportes = '/deportes.json';
+const deportes = '/deportes';
 
 /**
  * Servicio para prporcioanr todo sobre los deporrtes.
