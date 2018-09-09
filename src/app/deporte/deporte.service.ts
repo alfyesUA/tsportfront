@@ -6,7 +6,7 @@ import { HttpClient } from '@angular/common/http';
 import { environment } from '../../environments/environment';
 
 const API_URL = environment.apiURL;
-const deportes = '/deportes';
+const deportes = '/deportes.json';
 
 /**
  * Servicio para prporcioanr todo sobre los deporrtes.
@@ -25,6 +25,6 @@ export class DeporteService {
      * @returns Lista de deportes en tiempo real.
      */
     getDeportes(): Observable<Deporte[]> {
-        return this.http.get<Deporte>(API_URL + deportes);
+        return this.http.get<Deporte[]>(API_URL + deportes);
     }
 }
